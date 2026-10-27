@@ -15,9 +15,9 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: current
-      - name: Unpack zip if the project was uploaded as friendrun.zip
+      - name: Unpack zip if the project was uploaded as frun.zip
         run: |
-          if [ -f friendrun.zip ]; then rm -rf friendrun; unzip -o -q friendrun.zip; fi
+          if [ -f frun.zip ]; then rm -rf friendrun; unzip -o -q frun.zip; fi
       - name: Build
         id: build
         run: |
